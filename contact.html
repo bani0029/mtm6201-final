@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Contact</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary py-3">
+        <div class="container-fluid">
+            <!-- Logo on the left side -->
+            <a class="navbar-brand ms-3" href="index.html">
+                <img src="images/logo.ai" alt="Logo" width="40" height="40">
+            </a>
+
+            <!-- Navigation Links and Account Icon on the right -->
+            <div class="d-flex ms-auto align-items-center">
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+
+                <!-- Account icon at the right end -->
+                <a href="account.html" class="text-white ms-3">
+                    <!-- <img src="images/account-icon.svg" alt="Account Icon" width="30" height="30"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                      </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Contact Page Content -->
+    <section class="container py-5">
+        <!-- Social Media & Text Section -->
+        <div class="row">
+            <!-- Left Section: Text -->
+            <div class="col-lg-6 order-2 order-lg-1">
+                <h2 class="mb-3">Let's Connect and Create</h2>
+                <p>Let’s connect and create something amazing together! Whether you’re a musician, artist, or fellow creator, I’m excited to collaborate and bring our ideas to life. Reach out to discuss how we can combine our talents and craft unique content that resonates with our audiences.</p>
+            </div>
+            <!-- Right Section: Social Media Icons -->
+            <div class="col-lg-6 text-center order-1 order-lg-2 mb-4 d-flex flex-row">
+                <div class="col-4 col-lg-3 mb-3">
+                    <img src="images/instagram.png" alt="Instagram Icon" class="social-icon">
+                    <p class="mt-2">saskar_ban23</p>
+                </div>
+                <div class="col-4 col-lg-3 mb-3">
+                    <img src="images/phone.jpg" alt="Phone Icon" class="social-icon">
+                    <p class="mt-2">+1234567890</p>
+                </div>
+                <div class="col-4 col-lg-3 mb-3">
+                    <img src="images/email.png" alt="Email Icon" class="social-icon">
+                    <p class="mt-2">saskar37@domain.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <!-- First Row: First Name & Last Name -->
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" id="firstName" class="form-control" >
+                        </div>
+                        <div class="col-md-4">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" id="lastName" class="form-control" ">
+                        </div>
+                    </div>
+
+                    <!-- Second Row: Email -->
+                    <div class="mb-3 col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" >
+                    </div>
+
+                    <!-- Third Row: Message -->
+                    <div class="mb-3 col-md-7">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-control" rows="5" ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-purple">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="text-center bg-secondary py-3">
+        <p>&copy; 2024 Saskar Baniya</p>
+    </footer>
+
+
+    <!-- Bootstrap JS & Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
