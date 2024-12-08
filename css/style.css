@@ -5,101 +5,121 @@ body {
     background: linear-gradient(to bottom, #010101, #231730);
     height: 100%;
     margin: 0;
-    color:white;
+    color: white;
 }
 
 
-/* Add gap (padding) to the left and right side for all content after the navbar */
+.navbar,
+.footer {
+    background-color: #444444;
+}
+
+
 section {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Ensure proper alignment for the image */
 img {
     max-width: 100%;
     height: auto;
 }
 
-.custom-img{
+.custom-img {
     border-radius: 10px;
 }
 
-/* For the main section */
 section {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Custom Button Styles */
 .btn-purple {
-    background-color: #6a0dad; /* Purple Background */
-    color: white; /* White text */
-    padding: 12px 30px; /* Padding for button */
-    font-size: 16px; /* Font size */
-    border-radius: 25px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
+    background-color: #6a0dad;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    text-decoration: none;
     display: inline-block;
 }
 
 .btn-purple:hover {
-    background-color: #8a2be2; /* Lighter purple on hover */
+    background-color: #8a2be2;
     text-decoration: none;
 }
 
 
 .vlog-img {
-    width: 100%; /* Make the image take full width of the column */
-    height: 150px; /* Keep the aspect ratio */
-    max-width: 200px; /* Set a max-width to limit image size */
-    border-radius: 40%; /* Make the image circular */
-    margin: 0 auto; /* Center align the image */
+    width: 100%;
+    height: 150px;
+    max-width: 200px;
+    border-radius: 40%;
+    margin: 0 auto;
 }
 
-/* For Raw Stories Images: Larger and Rectangular */
 .raw-story-img {
-    width: 100%; /* Take full width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 400px; /* Larger size for images */
-    border-radius: 15px; /* Slightly rounded corners */
-    margin: 0 auto; /* Center align the image */
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 15px;
+    margin: 0 auto;
 }
 
 
-/* Social Media Icons */
 .social-icon {
-    width: 80px; /* Adjust the size of icons */
+    width: 80px;
     height: 80px;
-    border-radius: 50%; /* Make icons circular */
+    border-radius: 50%;
     padding: 10px;
 }
 
-/* Form Section */
 .form-label {
     font-weight: bold;
 }
 
-/* About Us Section */
 .about-title {
-    font-size: 2.5rem;
+    font-family: 'Kalnia';
+    font-size: 55px;
+}
+
+.photography-title {
+    color: #FF8000 !important;
+    font-family: 'Kalnia';
     font-weight: bold;
-    color: #333;
+    font-size: 35px;
+}
+
+.videography-title {
+    color: #FFFB04;
+    font-family: 'Kalnia';
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .left-section h2,
 .right-section h2 {
     font-size: 1.8rem;
     font-weight: bold;
-    color: yellow;;
+    color: yellow;
+    ;
 }
 
 .highlighted-text {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.8;
+}
+
+.connect-text {
+    font-family: 'Kalnia';
+    font-size: 50px;
+}
+
+.natural-text {
+    font-family: 'Kalnia';
+    font-size: 45px;
 }
 
 /* Flexbox Adjustment */
@@ -109,47 +129,54 @@ section {
     gap: 1rem;
 }
 
-.left-section,
-.right-section {
-    padding: 0.5rem;
+.image-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.collab-images {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.center-image {
+    display: block;
+    margin: 20px auto;
 }
 
 
-/* Adjust the layout for tablet and mobile devices */
 @media (max-width: 991px) {
     .col-lg-6 {
-        text-align: center; /* Center content on smaller screens */
+        text-align: center;
     }
 
-    /* Ensures that the image is not too big nor too small */
     img {
         max-width: 80%;
         margin-bottom: 20px;
     }
 
-    /* Match the text width with the image width */
     .col-lg-6 p {
         max-width: 80%;
         margin: 0 auto;
     }
 
     .col-lg-4 {
-        text-align: center; /* Center content on smaller screens */
+        text-align: center;
     }
 
-    /* Ensure images are not too big or too small on mobile */
     .custom-img {
         max-width: 90%;
         margin-bottom: 15px;
     }
 
-    /* Align text and images properly on smaller screens */
     .col-lg-4 p {
         max-width: 90%;
         margin: 0 auto;
     }
 
-    /* Stack images and buttons in the left section */
     .col-lg-4 img {
         width: 100%;
     }
@@ -158,48 +185,47 @@ section {
         flex-direction: column;
         gap: 2rem;
     }
+
 }
 
-
-
 @media (max-width: 767px) {
-    /* Stacking layout for mobile */
+
     .col-lg-4 {
         margin-bottom: 30px;
     }
 
     .row {
-        text-align: center; /* Center all content */
-    }
-    .col-lg-6 {
-        text-align: center; /* Ensure text is centered on mobile */
+        text-align: center;
     }
 
-    /* Adjust image and text stacking order on mobile */
+    .col-lg-6 {
+        text-align: center;
+    }
+
     .order-lg-1 {
         order: 2;
     }
+
     .order-lg-2 {
         order: 1;
     }
 
-      /* Align Social Media Icons Vertically on Smaller Screens */
-      .social-icon {
+    .social-icon {
         display: block;
         margin: 0 auto 10px;
     }
 
-    .social-icon + p {
+    .social-icon+p {
         text-align: center;
     }
 
-    /* Center Align Text Section */
-    h2, p {
+    h2,
+    p {
         text-align: center;
     }
 
-    /* Adjust Form Padding */
     form {
         padding: 0 15px;
     }
+
 }
